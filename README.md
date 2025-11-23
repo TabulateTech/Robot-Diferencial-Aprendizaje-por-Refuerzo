@@ -8,12 +8,13 @@ Todo corre en el navegador utilizando **HTML5 Canvas**, **JavaScript** y **Tenso
 # Robot Diferencial RL (Web Demo)
 
 <div align="center">
-  <img src="img/DEMO.png" width="320"/>
+  <img src="img/DEMO.png" width="512"/>
 </div>
 
 <h6 align="center">
     Simulación en navegador de un robot diferencial controlado con Deep Q-Learning usando TensorFlow.js
 </h6>
+
 
 ---
 
