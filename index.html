@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Diferencial RL</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Agente Robot Diferencial RL</h1>
+            <p>Haz click en el área para colocar el objetivo (Punto Verde)</p>
+        </header>
+
+        <div class="simulation-area">
+            <canvas id="simulationCanvas"></canvas>
+
+            <!-- Panel de estado a la DERECHA del canvas -->
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <h3>Estado</h3>
+                    <p id="statusText">Esperando...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Recompensa</h3>
+                    <p id="rewardText">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Episodio</h3>
+                    <p id="episodeText">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="btn">Reiniciar Agente</button>
+            <button id="toggleTrainingBtn" class="btn">Pausar Entrenamiento</button>
+            <button id="saveBtn" class="btn" style="background-color: #22c55e;">Guardar Modelo</button>
+            <button id="loadBtn" class="btn" style="background-color: #a855f7;">Cargar Modelo</button>
+
+            <!-- Input para cargar modelo (JSON + BIN) -->
+            <input type="file" id="modelInput" multiple accept=".json,.bin" style="display:none">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
